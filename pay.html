@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/py.css">
+    <link rel="website icon" type="png" href="image/Color logo - no background.png">
+    <title>WR HOTEL Payment Gateway</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Gateway</h1>
+        <div class="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="Card Number" required>
+            <br>
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" placeholder="MM/YY" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="CVV" required> 
+            <br>
+            <a href="index.html"><button id="submit-button">Submit Payment</button></a>
+        </div>
+        <div id="confirmation" class="hidden">
+            Payment Successful!
+        </div>
+    </div>
+    <script src="js/pys.js"></script>
+</body>
+</html>

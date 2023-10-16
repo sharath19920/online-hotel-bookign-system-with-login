@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Restaurant.css">
+    <link rel="web icon" type="png" href="image/Color logo - no background.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+    <title>WR hotel Rooms</title>
+    
+</head>
+<body>
+    <div class="header" id="myHeader">
+        
+      </div>
+    <section class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">WR</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="smoothScroll">HOME</a></li>
+                    
+                    <li><a href="restaurant.html" class="smoothScroll">RESTAURANT</a></li>
+                    <li><a href="index.php" class="smoothScroll">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="image-container">
+        <div class="image-column">
+            <a href="H2.html"  data-lightbox-gallery="image-container"><img src="image/H1.jpg" alt="bunglow8 hotel& resort"></a>
+            <h2>Bunglow8 hotel& resort</h2>
+            <p>Behind Poovanthi Rehabilitation centre,korattur,chennai tamil nadu </p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"> <img src="image/H2.jpg" alt="vaangaram,chennai "> </a>
+            <h2>M stays</h2>
+            <p>vaangaram,chennai </p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"> <img src="image/H3.jpg" alt = " KAY-EM SPECTRA " > </a>
+            <h2>KAY-EM SPECTRA</h2>
+            <p>Service Rd, Vanagaram, Chennai</p>
+        </div>
+        <div class="image-column">
+              <a href="H2.html"> <img src="image/H4.jpg" alt="Madras regency "> </a> 
+            <h2>Madras regency</h2>
+            <p>CMBT Mofussil, Jai Nagar, Koyambedu, Chennai</p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"><img src="image/H5.webp" alt=" JP hotel chennai "> </a>
+            <h2>JP hotel chennai</h2>
+            <p>jai nagar,koyambedu,chennai</p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"><img src="image/H6.jpeg" alt="K-SQUARE HOTEL"> </a>
+            <h2>K-SQUARE HOTEL</h2>
+            <p>100 feet rd,koyambedu,chenni</p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"><img src="image/H7.webp" alt=" Madras House  "> </a>
+            <h2>Madras House</h2>
+            <p>Clock Tower St, Thirumangalam, Chennai</p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"><img src="image/H8.jpg" alt="Emirates Residency "> </a>
+            <h2>emirates residency </h2>
+            <p>Rathnapuri, Koyambedu, Chennai</p>
+        </div>
+        <div class="image-column">
+            <a href="H2.html"><img src="image/H9.jpg" alt="hotel la castle"> </a>
+            <h2>hotel la castle</h2>
+            <p>CMBT Mofussil Bus Terminus, Koyambedu, Chennai</p>
+        </div>
+        
+        
+    </div>
+
+  <script>
+        
+        var elements = document.getElementsByClassName("column");
+        
+        
+        var i;
+        
+        
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "100%";  // IE10
+            elements[i].style.flex = "100%";
+          }
+        }
+        
+        
+        function two() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "50%";  // IE10
+            elements[i].style.flex = "50%";
+          }
+        }
+        
+      
+        
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script> 
+        
+</body>
+</html>
